@@ -2,11 +2,19 @@
   "name": "spa-23-webapp-packages-kazhimrycerz",
   "version": "1.0.0",
   "description": "**Instructions**:",
-  "main": "index.js",
+  "main": "src/index.js",
+  "homepage": "https://kazhimrycerz.github.io/welcomingPage/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "watch-webpack": "webpack --watch"
+    "watch-webpack": "webpack --watch",
+    "server": "light-server -c light-server.json",
+    "open-browser": "open -a 'Google Chrome' http://127.0.0.1:8080",
+    "start": "run-p watch-webpack server",
+    "clean": "rm -rf dist",
+    "copy": " mkdir dist dist/src dist/public && cp -r src/* dist/src && cp -r public/* dist/public",
+    "publish": "gh-pages -d dist",
+    "deploy": "run-s clean copy build publish"
   },
   "repository": {
     "type": "git",
@@ -17,13 +25,15 @@
   "bugs": {
     "url": "https://github.com/fbw-d05/spa-23-webapp-packages-KazhimRycerz/issues"
   },
-  "homepage": "https://github.com/fbw-d05/spa-23-webapp-packages-KazhimRycerz#readme",
   "keywords": [],
   "devDependencies": {
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
+    "light-server": "^2.9.1",
+    "npm-run-all": "^4.1.5",
     "random-color-pair": "^1.0.5"
   }
 }
