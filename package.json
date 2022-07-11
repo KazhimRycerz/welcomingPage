@@ -1,5 +1,5 @@
 {
-  "name": "spa-23-webapp-packages-kazhimrycerz",
+  "name": "welcominPage",
   "version": "1.0.0",
   "description": "**Instructions**:",
   "main": "src/index.js",
@@ -18,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fbw-d05/spa-23-webapp-packages-KazhimRycerz.git"
+    "url": "git+https://github.com/KahimRycerz/welcomingPage.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fbw-d05/spa-23-webapp-packages-KazhimRycerz/issues"
+    "url": "https://github.com/fbw-d05/KahimRycerz/welcomingPage/issues"
   },
   "keywords": [],
   "devDependencies": {
